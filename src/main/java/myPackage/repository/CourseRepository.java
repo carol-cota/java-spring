@@ -1,11 +1,8 @@
 package myPackage.repository;
 
 import myPackage.model.Course;
-import myPackage.service.CrudService;
 import org.springframework.stereotype.Repository;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -20,5 +17,10 @@ class CourseRepository implements CrudRepository<Course>{
     @Override
     public List<Course> findAll() {
         return courses;
+    }
+
+    @Override
+    public Course create(Course object) {
+        return null;
     }
 }

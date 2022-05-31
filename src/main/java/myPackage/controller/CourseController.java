@@ -22,4 +22,12 @@ public class CourseController {
 
         return courses;
     }
+
+    @GetMapping("/course/new")
+    public List<Course> create() {
+        List<Course> courses = service.list();
+
+        return courses;
+    }
+
 }
